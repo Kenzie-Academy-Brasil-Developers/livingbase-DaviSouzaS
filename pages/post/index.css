@@ -45,7 +45,9 @@ header {
 
 .principal-img-post {
     margin: 53px 0 52px 0;
-    width: 100%;
+    width: 1140px;
+    height: 402px;
+    object-fit: cover;
 }
 
 .post-content {
