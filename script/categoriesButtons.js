@@ -1,3 +1,6 @@
+import { filterPosts } from "./filterPosts.js"
+
+
 export function renderCategoryButtons () {
 
     const categories = ['Todos','Pintura','Decoração','Organização','Limpeza','Segurança','Reforma','Aromas']
@@ -13,5 +16,10 @@ export function renderCategoryButtons () {
 
         categoriesList.appendChild(li)
     })
+
+    let buttons = document.querySelectorAll('.category-button')
+  
+    filterPosts(buttons)
 }
+
 

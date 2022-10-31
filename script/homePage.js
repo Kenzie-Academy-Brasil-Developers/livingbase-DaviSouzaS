@@ -3,14 +3,14 @@ import { getPosts } from "./requests.js";
 
 renderCategoryButtons()
 
+
 async function renderPosts () {
 
-    const PostInfos = await getPosts()
+    const  PostInfos = await getPosts()
     const news = PostInfos.news
     const postList = document.querySelector('.post-lists')
 
     news.forEach(post => {
-        console.log(post)
 
         let div = document.createElement('div')
 
@@ -37,3 +37,4 @@ async function renderPosts () {
 }
 
 renderPosts()
+
