@@ -62,4 +62,10 @@ header > div {
     margin: 16px 0 16px 0;
 }
 
+.img-post {
+    width: 548px;
+    height: 172px;
+    object-fit: cover;
+}
+
 

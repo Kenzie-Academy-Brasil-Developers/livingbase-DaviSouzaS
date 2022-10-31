@@ -4,7 +4,6 @@ export function renderCategoryButtons () {
 
     const categoriesList = document.querySelector('.category-lists')
 
-
     categories.forEach(iten => {
         let li = document.createElement('li')
         li.classList.add('category-button')
