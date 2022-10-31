@@ -11,7 +11,6 @@ async function renderPosts () {
     const postList = document.querySelector('.post-lists')
 
     news.forEach(post => {
-
         let div = document.createElement('div')
 
         let imgPost = document.createElement('img')
@@ -29,6 +28,13 @@ async function renderPosts () {
         let pButtonPost = document.createElement('p')
         pButtonPost.classList.add('button-post')
         pButtonPost.innerText = 'Acessar conteúdo'
+
+        pButtonPost.addEventListener('click', () => {
+
+            localStorage.setItem("postID", JSON.stringify(post.id))
+
+            window.location.replace("/pages/post/index.html")
+        })
 
         div.append(imgPost, h3Titile, pDesc, pButtonPost)
 
